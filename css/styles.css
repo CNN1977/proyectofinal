@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Happiness Mood";
+    src: url(../fonts/Happiness\ Mood\ Demo.ttf);
+}
+@font-face {
+    font-family: "Typewriter";
+    src: url(../fonts/jmh_typewriter/JMH\ Typewriter-Bold.otf);
+    }
+@font-face {
+    font-family: "fabulous spring";
+    src: url(../fonts/Fabulous\ Spring.ttf);
+}
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    inline-size:auto;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+.navegacion {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-content: space-between;
+    position: sticky;
+    text-align:inherit;
+    font-family: 'Pacifico', cursive;;
+    font-weight:normal;
+    :visited
+    } 
+
+body{
+    background-image: url(../img/fotografias-atardecer-sol-7.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+}
+
+h2 {
+    color: cadetblue; 
+}
+
+a {
+    text-decoration: none;
+}
+
+#sol {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
