@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Rubik+Burned&display=swap" rel="stylesheet">
     
     <!--CSS-->
     <link rel="stylesheet" href="css/styles.css">
@@ -21,55 +22,52 @@
 <body>
 
     <header id="vive">
-        <a href="index.html">
+        <a href="../index.html">
             <img src="img/Vive Mejor.png" alt="Logo Principal" title="Logo Vive Mejor" width="180" height="120">
         </a>
 
         <nav class="navegacion">
             
-            <a href="index.html">Inicio</a>
+            <a id="textnav" href="index.html">Inicio</a>
                
-            <a href="pages/elsol.html">El Sol</a>
+            <a id="textnav" href="pages/elsol.html">El Sol</a>
                 
-            <a href="pages/nutricion.html">Nutrición</a>
+            <a id="textnav" href="pages/nutricion.html">Nutrición</a>
                 
-            <a href="pages/actividadfisica.html">Actividad Física
+            <a id="textnav" href="pages/actividadfisica.html">Actividad Física
                 
-            <a href="pages/ayunointermitente.html">Ayuno Intermitente</a>
+            <a id="textnav" href="pages/ayunointermitente.html">Ayuno Intermitente</a>
                 
-            <a href="pages/grounding.html">Grounding</a>
+            <a id="textnav" href="pages/grounding.html">Grounding</a>
                 
-            <a href="pages/sinestress.html">Sin Estress</a>
+            <a id="textnav" href="pages/sinestress.html">Sin Estress</a>
                 
         </nav>
     </header>
-
-    <main>
+    <br>
+    <article>
         <h2>Por Qué</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, repellendus eaque nihil exercitationem molestiae facere fuga pariatur, vero, odio quo sit unde assumenda obcaecati fugiat temporibus dolore soluta quam dolor!
         </p>
 
         <h2>Danos tu opinión o Contribuye con nosotros</h2>
+
         <form>
-            <label for="">Nombre Completo:</label> 
+            <label for="nombrecompleto">Nombre Completo:</label> 
             <input id="nombrecompleto">
             
-            <div>
-            <br>
-            <label for="">Email:</label>
+            <label for="email">Email:</label>
             <input type="email">
-            <div>
-                <br>
-            <label for="">Comentarios</label>
+            
+            <label for="Comentarios">Comentarios:</label>
             <textarea id="Comentarios" cols="40" rows="20"></textarea>
-
-            <div>
                 
-            </div>
-            <input type="submit" value="Enviar Comentarios">
+            <button>Enviar Comentarios</button>
+            <button>Borrar</button>
 
         </form>
-    </main>
+    </article>
+
     <footer>
         <p>2023 Vive Mejor tiene Todos los Derechos Reservados</p>
     </footer>

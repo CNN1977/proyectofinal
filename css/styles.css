@@ -27,33 +27,108 @@ header {
     width: 100%;
 }
 
+header a img:hover{
+    transform: scale(1.5);
+    transition: 2s;
+}
+
 .navegacion {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     justify-content: space-between;
     position: sticky;
     text-align:inherit;
-    font-family: 'Pacifico', cursive;;
+    font-family: 'Pacifico', cursive;
     font-weight:normal;
-    :visited
-    } 
+    background-color:rgba(200, 236, 237, 0.411);
+    overflow: hidden;
+    box-shadow: 0 0 5px cyan;
+} 
+
+#textnav {
+    color:rgba(151, 16, 43, 0.801); 
+    transition: 1s;
+}
+
+header .navegacion #textnav:hover{
+    transform: scale(1.2);
+    color:cyan;
+}
 
 body{
+    text-align: center;
     background-image: url(../img/fotografias-atardecer-sol-7.jpg);
     background-repeat: no-repeat;
     background-size:cover;
     background-attachment: fixed;
 }
 
+article{
+    margin: 5px 10px;
+}
+
 h2 {
-    color: cadetblue; 
+    color: cyan;
+    font-family: "Typewriter"; 
+    font-style: oblique;
 }
 
 a {
     text-decoration: none;
 }
 
-#sol {
+form{
+    display: grid;
+    grid-template-columns: 160px 240px;
+    grid-template-rows: repeat(4 100px);
+    gap: 20px;
+    font-family: "typewriter";
+}
+
+form label{
+    text-align: end;
+}
+
+button{
+    background-color: cadetblue;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+form button:hover{
+    background-color: azure;
+    color: blueviolet;
+}
+
+form button{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50% 50%;
+}
+
+.sol {
     display: flex;
+    flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
+}
+
+.sol h2{
+    color: orange;
+    margin: 25px;
+}
+
+.sol a{
+    font-family: 'Rubik Burned', system-ui;
+    font-size:50px;
+    color: yellow;
+    background-image: url(https://okdiario.com/img/2019/11/20/-por-que-brilla-el-sol-esta-es-la-razon.jpg);
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+footer{
+    text-align: center;
+}
