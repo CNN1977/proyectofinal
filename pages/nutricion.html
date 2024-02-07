@@ -4,6 +4,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
+        <meta name="keywords" content="vive mejor, saludable, vitalidad, longevidad, vida sana, comer bien, comer saludable, nutricion">
+        
+        <!--boostrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
         <!--favicon-->
         <link rel="shortcut icon" href="C:\Users\cnpre\OneDrive\Escritorio\CoderHouse\Pre-Entrega Navas\img\Vive Mejor.png" type="image/x-icon">
         <title>Vive Mejor</title> 
@@ -25,30 +31,88 @@
         </a>
 
         <nav class="navegacion">
-            <a id="textnav" href="../index.html">Inicio</a>
-            
-            <a id="textnav" href="elsol.html">El Sol</a>
-            
-            <a id="textnav" href="nutricion.html">Nutrición</a>
-            
-            <a id="textnav" href="../pages/actividadfisica.html">Actividad Física</a>
-            
-            <a id="textnav" href="ayunointermitente.html">Ayuno Intermitente</a>
-            
-            <a id="textnav" href="grounding.html">Grounding</a>
-            
-            <a id="textnav" href="sinestress.html">Sin Estress</a>
-            
+
+            <ul class="menu">
+                <li>
+                    <a id="textnav" href="../index.html">Inicio</a>
+                </li>
+                <li>
+                    <a id="textnav" href="../pages/elsol.html">El Sol</a>
+                        <ul class="submenu">
+                            <li><a href="../pages/elsol.html">Importancia</a></li>
+                            <li><a href="../pages/elsol.html">Grounding</a></li>
+                        </ul>
+                </li>
+                <li>
+                    <a id="textnav" href="nutricion.html">Nutrición</a>
+                        <ul class="submenu">
+                        <li><a href="nutricion.html">Por Qué</a></li>
+                        <li><a href="nutricion.html">Ayuno Intermitente</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a id="textnav" href="../pages/actividadfisica.html">Actividad Física</a>
+                </li>
+                <li>
+                    <a id="textnav" href="../pages/sinestres.html">Sin Estress</a>
+                </li>
+
+            </ul>
+                   
         </nav>
     </header>
+
+    <h1>Por Qué debemos NUTRIRNOS</h1>
+
     <main>
-        <h2>Por Qué debemos NUTRIRNOS</h2>
-        <ul>
-            <li>Porque somos lo que comemos
-            </li>
-            <li>Porque cada "cosa" que comemos afecta nuestro cuerpo</li>
-            <li>Porque nuestra mejor medicina, es el alimento</li>
-        </main>
+        
+        <p>Cuando hablamos de alimentación, de NUTRICIÓN, justamente lo primero que debemos saber es el concepto real de nutrición. Siempre nos han enseñado que es lo mismo comer, alimentarse, nutrirse....pero no es así! Comer vendría siendo el simple hecho de masticar e ingerir "cosas"; introducir elementos externos a nuestro sistema digestivo. <br>
+        Ahora bien, cuando nos referimos a NUTRICIÓN, estamos implicando procesos que suceden en tu cuerpo después de obtener, asimilar y digerir los NUTRIENTES que componen a los alimentos. Por tanto, todo lo que comemos no necesariamente nos nutre y por eso es fundamental conocer la diferencia entre comer y nutrirnos. <br>
+        Existen varias formas de nutrirnos (el sol es una especie de nutriente en forma de hormona) y a continuación, te presentamos las que se consideran 3 de las mejores existentes y que nos han acompañado por miles de años.</p>
+    </main>
+
+    <section class="carrusel">
+
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../img/Dieta Cetigénica.webp" class="d-block w-100" alt="Dieta Cetogénica">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Dieta Cetogénica</h5>
+                  <p>La Nutirición de nuestros ancestros.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="../img/Dieta Paleolítica.webp" class="d-block w-100" alt="Dieta Paleolítica">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Dieta Paleolítica</h5>
+                  <p>Otra forma de Nutrición ancestral.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="../img/Dieta Flexible.webp" class="d-block w-100" alt="Dieta Flexible">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Dieta Flexible</h5>
+                  <p>Una alternativa que permite nutrirnos.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </section>
+
     <footer>
         <p>2023 Vive Mejor tiene Todos los Derechos Reservados</p>
     </footer>

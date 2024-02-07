@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 @font-face {
@@ -15,16 +16,30 @@
     font-family: "fabulous spring";
     src: url(../fonts/Fabulous\ Spring.ttf);
 }
+
+body{
+    text-align: center;
+    font-family: "Typewriter";
+    background-image: url(../img/fotografias-atardecer-sol-7.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+}
+
 header {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
-    inline-size:auto;
     background-color: white;
     position: sticky;
     top: 0;
     width: 100%;
+    z-index: 1;
+}
+
+#vive a{
+    overflow: hidden;
+    margin-bottom: 2px;
+    margin-top: 5px;
 }
 
 header a img:hover{
@@ -32,49 +47,137 @@ header a img:hover{
     transition: 2s;
 }
 
-.navegacion {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    justify-content: space-between;
-    position: sticky;
-    text-align:inherit;
-    font-family: 'Pacifico', cursive;
-    font-weight:normal;
+.navegacion{
+    font-family: "pacifico";
+    font-size: large;
     background-color:rgba(200, 236, 237, 0.411);
-    overflow: hidden;
     box-shadow: 0 0 5px cyan;
-} 
+}
 
-#textnav {
-    color:rgba(151, 16, 43, 0.801); 
+.menu{
+    list-style: none;
+    display: flex;
+    justify-content:space-around;
+}
+
+.menu li a{
+    display: block;
+    text-decoration: none;
+    color: rgba(151, 16, 43, 0.801);
+}
+
+.menu li:hover{
+    transform: scale(1.2);
     transition: 1s;
 }
 
-header .navegacion #textnav:hover{
-    transform: scale(1.2);
-    color:cyan;
+.submenu{
+    position: absolute;
+    display: none;
+    list-style: none;
+    font-size: medium;
+    width: 100px;
+    padding-left: 2px;
+    text-align: left;
+    background-color: rgba(200, 236, 237, 0.411);
+    border: 1px solid cyan;
+    transition: 1s;
 }
 
-body{
-    text-align: center;
-    background-image: url(../img/fotografias-atardecer-sol-7.jpg);
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-attachment: fixed;
+.menu li:hover .submenu{
+    display: block;
 }
 
-article{
+.submenu li:hover{
+    background-color: cyan;
+    transform: scale(1.0);
+}
+
+.article{
     margin: 5px 10px;
+    font-size: large;
 }
 
-h2 {
+h1 {
+    margin-top: 15px;
     color: cyan;
     font-family: "Typewriter"; 
-    font-style: oblique;
+    background-color: black;
+    border-radius: 15PX;
+    border-style:ridge;
+    justify-items: center;
 }
 
-a {
-    text-decoration: none;
+p{
+    margin: 10px 20px 10px 20px;
+    color: rgba(151, 16, 43, 0.801);
+    border-radius: 5px 0;
+    background: radial-gradient(circle, rgb(0, 255, 255),rgba(200, 236, 237, 0.411))
+}
+
+/* Estilos Página de Inicio */
+
+.gradiente{
+    background: radial-gradient(circle, rgb(0, 255, 255),rgba(200, 236, 237, 0.411));
+}
+
+article div img{
+    border-radius: 45px 0 45px 0;
+    margin-top: 2em;
+    box-shadow: 1px 10px 25px rgba(0,0,0,0.5);
+}
+
+.Disciplina{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: left;
+    margin-right: 20%;
+    transition: .6s;
+    }
+
+.Disciplina:hover{
+    transform: translateX(20%);
+}
+
+.Perseverancia{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    transition: .6s;
+}
+
+.Perseverancia:hover{
+    transform: translateX(-20%);
+}
+
+.Conocimiento{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left; 
+    margin-right: 20%;
+    transition: .6s;
+}
+
+.Conocimiento:hover{
+    transform: translateX(20%);
+}
+
+.Conocimiento p{
+    margin: 0 250px 0 250px;
+    background-color: white;
+    color: black;
+    justify-content: center;
+}
+
+.Compromiso{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right; 
+    transition: .6s;
+}
+
+.Compromiso:hover{
+    transform: translateX(-20%);
 }
 
 form{
@@ -83,52 +186,96 @@ form{
     grid-template-rows: repeat(4 100px);
     gap: 20px;
     font-family: "typewriter";
+    justify-content: center;
 }
 
 form label{
     text-align: end;
 }
 
-button{
+form input{
+    border-radius: 0 5px;
+    border-style: none;
+}
+
+form textarea{
+    border-radius: 0 5px;
+    border-style: none;
+}
+
+article button{
     background-color: cadetblue;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    border-radius: 10px;
-    text-align: center;
+    margin-top: 15px;
+    padding: 10px;
+    justify-content: center;
+    border-radius: 5px 0;
     cursor: pointer;
 }
 
-form button:hover{
+article button:hover{
     background-color: azure;
     color: blueviolet;
+    transition: 1s;
 }
 
-form button{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 50% 50%;
-}
+/* Estilos Página El Sol */
 
-.sol {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-}
-
-.sol h2{
+.luzDelSol h2{
     color: orange;
     margin: 25px;
 }
 
-.sol a{
+.luzDelSol a{
     font-family: 'Rubik Burned', system-ui;
     font-size:50px;
     color: yellow;
     background-image: url(https://okdiario.com/img/2019/11/20/-por-que-brilla-el-sol-esta-es-la-razon.jpg);
-    margin: 10px;
-    margin-bottom: 20px;
+    background-repeat: no-repeat;
+    background-size: 380px;
+    text-align: center;
+    justify-content: center; 
 }
+
+/* Estilos página Nutirición */
+
+.carrusel{
+    margin: 50px;
+}
+
+/* Resonsive Mobile */
+
+@media(max-width:480px){
+    .article div img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .Disciplina:hover{
+        transform: none;
+    }
+    .Perseverancia:hover{
+        transform: none;
+    }
+    .Conocimiento:hover{
+        transform: none;
+    }
+    .Compromiso:hover{
+        transform: none;
+    }
+    
+    .container .col-5{
+        width: 420px;
+        align-items: center;
+    }
+
+    .container-fluid iframe{
+        width: 400px;
+    }
+    }
 
 footer{
     text-align: center;
 }
+

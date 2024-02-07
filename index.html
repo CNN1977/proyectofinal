@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <meta name="keywords" content="vive mejor, saludable, vitalidad, longevidad, vida sana, comer bien, comer saludable, nutricion">
+
+    <!--boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
     <!--favicon-->
     <link rel="shortcut icon" href="C:\Users\cnpre\OneDrive\Escritorio\CoderHouse\Pre-Entrega Navas\img\Vive Mejor.png" type="image/x-icon">
     <title>Vive Mejor</title> 
@@ -27,28 +33,61 @@
         </a>
 
         <nav class="navegacion">
-            
-            <a id="textnav" href="index.html">Inicio</a>
-               
-            <a id="textnav" href="pages/elsol.html">El Sol</a>
-                
-            <a id="textnav" href="pages/nutricion.html">Nutrición</a>
-                
-            <a id="textnav" href="pages/actividadfisica.html">Actividad Física
-                
-            <a id="textnav" href="pages/ayunointermitente.html">Ayuno Intermitente</a>
-                
-            <a id="textnav" href="pages/grounding.html">Grounding</a>
-                
-            <a id="textnav" href="pages/sinestress.html">Sin Estress</a>
-                
+
+            <ul class="menu">
+                <li>
+                    <a id="textnav" href="index.html">Inicio</a>
+                </li>
+                <li>
+                    <a id="textnav" href="pages/elsol.html">El Sol</a>
+                        <ul class="submenu">
+                            <li><a href="pages/elsol.html">Importancia</a></li>
+                            <li><a href="pages/elsol.html">Grounding</a></li>
+                        </ul>
+                </li>
+                <li>
+                    <a id="textnav" href="pages/nutricion.html">Nutrición</a>
+                        <ul class="submenu">
+                        <li><a href="pages/nutricion.html">Por Qué</a></li>
+                        <li><a href="pages/elsol.html">Ayuno Intermitente</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a id="textnav" href="pages/actividadfisica.html">Actividad Física</a>
+                </li>
+                <li>
+                    <a id="textnav" href="pages/sinestres.html">Sin Estress</a>
+                </li>
+
+            </ul>
+                   
         </nav>
+
     </header>
-    <br>
+
+    <h1>Qué significa Vive Mejor</h1>
+
     <article>
-        <h2>Por Qué</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, repellendus eaque nihil exercitationem molestiae facere fuga pariatur, vero, odio quo sit unde assumenda obcaecati fugiat temporibus dolore soluta quam dolor!
+        
+        <p class="gradiente">Sin lugar a dudas, la mayoría de las personas quisiera vivir mejor. Evidentemente, vivir mejor es un concepto bastante amplio por lo que esta página quiere enfocarse en un aspecto meramente vital como lo es la <strong>LA SALUD</strong>. Y es que como siempre hemos escuchado o leído alguna vez: "Sin Salud no tenemos NADA". Así de simple.
+        <br>
+        <strong>VIVE MEJOR</strong> significa tener salud. Se escucha fácil y sencillo pero definitivamente no lo es. Abarca un conjunto de "pequeñas" grandes acciones que van a lograr el objetivo de esa gran mayoría: Vivir Mejor. La buena noticia es que a pesar de no ser fácil tampoco es díficil. Requiere algunos conceptos que todos podemos poner en práctica diariamente.
         </p>
+        <div class="Disciplina">
+            <img src="img/disciplina-3-320.webp" alt="Disciplina" title="Disciplina" height="320">
+        </div>
+        <div class="Perseverancia">
+            <img src="img/32.-Perseverancia (1).webp" alt="Perseverancia" title="Perseverancia" height="420">
+        </div>
+        
+        <div class="Conocimiento">
+            <img src="img/Conocimiento.webp" alt="Conocimiento" title="Conocimiento" height="420">
+        </div>
+
+        <div class="Compromiso">
+            <img src="img/Compromiso.webp" alt="Compromiso" title="Compromiso" height="320px" width="420">
+
+        </div>
 
         <h2>Danos tu opinión o Contribuye con nosotros</h2>
 
@@ -62,14 +101,17 @@
             <label for="Comentarios">Comentarios:</label>
             <textarea id="Comentarios" cols="40" rows="20"></textarea>
                 
-            <button>Enviar Comentarios</button>
-            <button>Borrar</button>
-
         </form>
+
+        <button>Enviar Comentarios</button>
+        <button>Borrar</button>
+
     </article>
 
     <footer>
         <p>2023 Vive Mejor tiene Todos los Derechos Reservados</p>
     </footer>
+
 </body>
+
 </html> 
